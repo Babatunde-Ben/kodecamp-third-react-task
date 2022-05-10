@@ -9,18 +9,24 @@
 }
 body {
   background-color: rgb(246, 246, 246);
-  color: #333;
-  padding: 20px 70px;
+  color: rgb(59, 59, 59);
+  width: 100vw;
 }
 .nav {
   text-align: center;
+  width: 100%;
+  font-size: 1.7rem;
+  box-shadow: 0px 2px 30px rgba(87, 87, 87, 0.1);
+  padding: 10px 0;
 }
 .container {
+  padding: 20px 70px;
+  width: 100vw;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   row-gap: 25px;
-  column-gap: 10px;
+  column-gap: 25px;
   flex-wrap: wrap;
   margin-top: 20px;
 }
@@ -29,13 +35,12 @@ body {
   padding: 10px 30px;
   border-radius: 5px;
   width: 300px;
-  height: 280px;
-  /* margin: 19px ; */
+  height: 260px;
 }
 .name {
   margin: 10px 0;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.1em;
   text-transform: capitalize;
 }
@@ -46,7 +51,7 @@ body {
   margin-bottom: 15px;
 }
 .subtitle {
-  font-weight: bold;
+  font-weight: 700;
   text-transform: capitalize;
   margin-bottom: 10px;
   font-size: 1.2rem;
@@ -57,11 +62,14 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
-  /* background-color: red; */
   margin-bottom: 5px;
 }
+.info-bold-text {
+  font-weight: 500;
+  color: #000;
+}
 .info p {
-  font-size: 0.9rem;
+  font-size: 0.9em;
 }
 .info p:nth-child(1) {
   width: 35%;
@@ -69,4 +77,24 @@ body {
 .info p:nth-child(2) {
   width: 75%;
   line-height: 1.1rem;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    width: 100vw;
+  }
+  .nav {
+    padding: 15px 0;
+    font-size: 1.6rem;
+  }
+  .container {
+    /* background-color: red; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    row-gap: 20px;
+    column-gap: 0px;
+    padding: 10px;
+  }
 }

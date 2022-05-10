@@ -12,13 +12,13 @@ const UserList = ({ user }) => {
 
       <div className="info">
         <p>
-          <b> Username</b>
+          <b className="info-bold-text"> Username:</b>
         </p>
         <p>{username}</p>
       </div>
       <div className="info">
         <p>
-          <b> Address</b>
+          <b className="info-bold-text"> Address:</b>
         </p>
         <p>
           {address.street}, {address.city}
@@ -26,13 +26,13 @@ const UserList = ({ user }) => {
       </div>
       <div className="info">
         <p>
-          <b> E-mail</b>
+          <b className="info-bold-text"> E-mail:</b>
         </p>
         <p>{email}</p>
       </div>
       <div className="info">
         <p>
-          <b> Phone</b>
+          <b className="info-bold-text"> Phone:</b>
         </p>
         <p>{phone}</p>
       </div>
